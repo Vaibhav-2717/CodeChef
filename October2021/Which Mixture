@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,a,b;
+	std::cin >> t;
+	while(t>0){
+	    cin>>a>>b;
+	    
+	    if(a>0 && b>0){
+	        std::cout << "Solution" << std::endl;
+	    }
+	    else if(b==0){
+	        std::cout << "Solid" << std::endl;
+	    }
+	    else if(a==0){
+	        std::cout << "Liquid" << std::endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
