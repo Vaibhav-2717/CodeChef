@@ -1,0 +1,27 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	std::cin >> t;
+	while(t--){
+	    int n,d;
+	         std::cin >> n>>d;
+	         int num=n,rem,c=0,ans=0;
+	         
+	         while(num>0){
+	             rem=num%10;
+	             num=num/10;
+	             c++;
+	             if(rem==d){
+	                 num=num*pow(10,c) + (rem+1)*pow(10,c-1);
+                      ans=num-n;
+                      c=0;
+	             }
+	         }
+	     std::cout << ans << std::endl;
+	     }
+	return 0;
+}
