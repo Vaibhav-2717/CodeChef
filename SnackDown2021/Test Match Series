@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	std::cin >> t;
+	while(t--){
+	    int dr=0,in=0,en=0;
+	    for(int i=0;i<5;i++){
+	        int r;
+	        std::cin >> r;
+	        if(r==1){
+	            in++;
+	        }
+	        else if(r==0){
+	            dr++;
+	        }
+	        else{
+	            en++;
+	        }
+	    }
+	    if(in>en){
+	        std::cout <<"INDIA"<< std::endl;
+	    }
+	    else if(in<en){
+	        std::cout <<"ENGLAND"<< std::endl;
+	    }
+	    else{
+	        std::cout <<"DRAW"<< std::endl;
+	    }
+	}
+	return 0;
+}
