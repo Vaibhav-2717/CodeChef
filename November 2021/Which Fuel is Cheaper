@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,a,b,x,y,k;
+	std::cin >> t;
+	while(t--){
+	    std::cin >> a>>b>>x>>y>>k;
+	    int petr=a,dies=b;
+	    for(int i=0;i<k;i++){
+	        petr+=x;
+	        dies+=y;
+	    }
+	    if(petr>dies){
+	        std::cout << "DIESEL" << std::endl;
+	    }
+	    else if(petr<dies){
+	        std::cout << "PETROL" << std::endl;
+	    }else{
+	        std::cout << "SAME PRICE" << std::endl;
+	    }
+	}
+	return 0;
+}
