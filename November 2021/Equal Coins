@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,y;
+	std::cin >> t;
+	while(t--){
+	    std::cin >> x>>y;
+	    if(x%2==0){
+	        if(x==0 && y%2!=0){
+	            std::cout << "NO" << std::endl;
+	        }
+	        else{
+	            std::cout << "yes" << std::endl;
+	        }
+	    }
+	    else{
+	        std::cout << "NO" << std::endl;
+	    }
+	}
+	return 0;
+}
