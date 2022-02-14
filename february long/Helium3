@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	
+	std::cin >> t;
+	
+	while(t--){
+	    int a,b,x,y,sum,sum1;
+	    std::cin >> a>>b>>x>>y;
+	    sum=a*b;
+	    sum1=x*y;
+	    
+	    if(sum1>=sum){
+	        std::cout << "Yes" << std::endl;
+	    }else{
+	        std::cout << "No" << std::endl;
+	    }
+	}
+	return 0;
+}
