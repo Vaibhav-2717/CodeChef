@@ -1,5 +1,3 @@
-package Datastructure.Recursion;
-
 import java.util.Scanner;
 
 public class NQueen {
